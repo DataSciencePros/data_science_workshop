@@ -27,7 +27,8 @@ Copy this repo locally in your workspace, start instance by running docker comma
 Paste the link to your browser.
 (you may need to replace the root with localhost)
 - Jupyter will show you notebooks and other files in the app folder. Clicking on one starts the notebook. 
-- Clicking on one cell (code box), and shift-enter, executes code in that box.
+  - For the Machine Learning workshop click on scikit_learn_workshop.ipynb
+- In the notebook, clicking on one cell (code box), and shift-enter, executes code in that box.
 
 ### Download Data, Code and Study Examples
 If you are not familiar with Git, You can browse to https://github.com/ATLD/data_science_workshop, and click on green "Clone or Download" button, and download the zip file.
