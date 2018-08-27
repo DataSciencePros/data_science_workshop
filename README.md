@@ -32,12 +32,12 @@ Paste the link to your browser.
 ### Download Data, Code and Study Examples
 If you are not familiar with Git, You can browse to https://github.com/ATLD/data_science_workshop, and click on green "Clone or Download" button, and download the zip file.
 
-#### Recommended: Get Using "git"
+#### Recommended Way: Get Them Using "git"
 If new to git, you may study:
 https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 
 Make sure a git client is running on your machine, and checkout the needed repos.
-if you use commandline client:
+if you use the commandline client:
 ```bash
 git clone https://github.com/ATLD/data_science_workshop.git
 ```
@@ -46,7 +46,7 @@ git clone https://github.com/ATLD/data_science_workshop.git
 If you want to create an web API, which will receive input, apply model to the data, and return the prediction, you can use Flask.
 You can use 
 https://github.com/DrOzturk/FlaskZipLookupApiExample
-###### Credits
+### Credits
 - Housing Data From Ted Petrou's Workshop: 
 https://github.com/tdpetrou/Machine-Learning-Books-With-Python
 - Workshop inspired by: 
