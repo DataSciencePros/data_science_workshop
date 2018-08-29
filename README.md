@@ -26,7 +26,7 @@ Copy this repo locally in your workspace, start instance by running docker comma
 ```bash
  git clone https://github.com/ATLD/data_science_workshop.git
  cd data_science_workshop
- docker run --rm -p 9999:8888 -e JUPYTER_LAB_ENABLE=yes \
+ docker run --rm -p 8888:8888 -e JUPYTER_LAB_ENABLE=yes \
  --mount 'type=bind,src='"$(pwd)"'/app,target=/home/jovyan/work' jupyter/scipy-notebook:8ccdfc1da8d5
  # alternative way to mount
  # mounts to a new folder, only managed by docker
@@ -39,7 +39,7 @@ Paste the link to your browser.
   - For the Machine Learning workshop click on scikit_learn_workshop.ipynb
 - In the notebook, clicking on one cell (code box), and shift-enter, executes code in that box.
 
-Visiting http://localhost:9999/?token=<token> in a browser loads JupyterLab, where hostname is the name of the computer running docker and token is the secret token printed in the console. Docker destroys the container after notebook server exit, but any files written to ~/work in the container remain intact on the host.
+Visiting http://localhost:8888/?token=<token> in a browser loads JupyterLab, where hostname is the name of the computer running docker and token is the secret token printed in the console. Docker destroys the container after notebook server exit, but any files written to ~/work in the container remain intact on the host.
 
 ### Download Data, Code and Study Examples
 If you are not familiar with Git, You can browse to https://github.com/ATLD/data_science_workshop, and click on green "Clone or Download" button, and download the zip file.
