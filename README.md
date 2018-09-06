@@ -19,12 +19,26 @@ gives you instructions about how to build the same docker image from the Dockerf
 
 For the workshop, you will need to run one docker command (below).  
 Learning docker is useful, you may want to attend the preceding workshop, or self-study:
-https://github.com/ATLD/docker_workshop
+https://github.com/DataSciencePros/docker_workshop
 
-## Running Notebooks
+## Download This Repo (Data, Code and Tasks)
+If you are not familiar with Git, You can browse to https://github.com/DataSciencePros/data_science_workshop, and click on green "Clone or Download" button, and download the zip file.
+
+### Recommended Way: Get Them Using "git"
+If new to git, you may follow this guide to install it and study:
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+Make sure a git client is running on your machine, and checkout the needed repos.
+if you use the commandline client:
+```bash
+git clone https://github.com/DataSciencePros/data_science_workshop.git
+```
+
+## Running the Docker Image and Viewing the Jupyter Notebooks
 Copy this repo locally in your workspace, start instance by running docker command in (data_science_workshop) repo folder:
 ```bash
- git clone https://github.com/ATLD/data_science_workshop.git
+ # this line for recommended way above to get this repo:
+ git clone https://github.com/DataSciencePros/data_science_workshop.git
  cd data_science_workshop
  docker run --rm -p 8888:8888 -e JUPYTER_LAB_ENABLE=yes \
  --mount 'type=bind,src='"$(pwd)"'/app,target=/home/jovyan/work' jupyter/scipy-notebook:8ccdfc1da8d5
@@ -40,19 +54,6 @@ Paste the link to your browser.
 - In the notebook, clicking on one cell (code box), and shift-enter, executes code in that box.
 
 Visiting http://localhost:8888/?token=<token> in a browser loads JupyterLab, where hostname is the name of the computer running docker and token is the secret token printed in the console. Docker destroys the container after notebook server exit, but any files written to ~/work in the container remain intact on the host.
-
-### Download Data, Code and Study Examples
-If you are not familiar with Git, You can browse to https://github.com/ATLD/data_science_workshop, and click on green "Clone or Download" button, and download the zip file.
-
-#### Recommended Way: Get Them Using "git"
-If new to git, you may study:
-https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
-
-Make sure a git client is running on your machine, and checkout the needed repos.
-if you use the commandline client:
-```bash
-git clone https://github.com/ATLD/data_science_workshop.git
-```
 
 ## Productionizing the Model
 If you want to create an web API, which will receive input, apply model to the data, and return the prediction, you can use Flask.
