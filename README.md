@@ -14,7 +14,7 @@ https://store.docker.com/search?offering=community&type=edition
 docker pull jupyter/scipy-notebook:8ccdfc1da8d5
 ```
 or `docker pull jupyter/scipy-notebook:latest` if you want to get always the latest version.   
-If you would need to modify this image, README.md in `https://github.com/ATLD/scikit_jupyper_docker`
+If you would need to modify this image, README.md in `https://github.com/DataSciencePros/scipy-notebook`
 gives you instructions about how to build the same docker image from the Dockerfile and run it.
 
 For the workshop, you will need to run one docker command (below).  
@@ -35,17 +35,25 @@ git clone https://github.com/DataSciencePros/data_science_workshop.git
 ```
 
 ## Running the Docker Image and Viewing the Jupyter Notebooks
-Copy this repo locally in your workspace, start instance by running docker command in (data_science_workshop) repo folder:
+Copy this repo locally in your workspace, go to (data_science_workshop) repo folder:
 ```bash
  # this line for recommended way above to get this repo:
  git clone https://github.com/DataSciencePros/data_science_workshop.git
  cd data_science_workshop
+```
+Start jupyter docker instance from this folder
+ ```bash
  docker run --rm -p 8888:8888 -e JUPYTER_LAB_ENABLE=yes \
  --mount 'type=bind,src='"$(pwd)"'/app,target=/home/jovyan/work' jupyter/scipy-notebook:8ccdfc1da8d5
  # alternative way to mount
  # mounts to a new folder, only managed by docker
  # -v "$PWD":/app
 ```
+Jupyter org defined this image to start notebook server serving files in /home/jovyan/work,
+that is why "app" folder is mapped into that folder.
+"pwd" means current folder in shell.
+
+- This command will (download image if local copy is not found and) create instace from image and start execution.
 - It will print how to connect to the jupyter environment and load notebooks, or create new notebooks.
 Paste the link to your browser.
 (you may need to replace the root with localhost)
