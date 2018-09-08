@@ -62,6 +62,9 @@ Paste the link to your browser.
 - In the notebook, clicking on one cell (code box), and shift-enter, executes code in that box.
 
 Visiting http://localhost:8888/?token=<token> in a browser loads JupyterLab, where hostname is the name of the computer running docker and token is the secret token printed in the console. Docker destroys the container after notebook server exit, but any files written to ~/work in the container remain intact on the host.
+## Running Code Snippets (cells) in the Notebook
+- Select cell, click Shift-Enter
+- or use "Cell" menu
 
 ## Productionizing the Model
 If you want to create an web API, which will receive input, apply model to the data, and return the prediction, you can use Flask.
