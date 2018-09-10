@@ -71,8 +71,9 @@ If you want to create an web API, which will receive input, apply model to the d
 You may want to check use 
 https://github.com/DrOzturk/FlaskZipLookupApiExample
 ### Credits
-- Housing Data From Ted Petrou's Workshop: 
-https://github.com/tdpetrou/Machine-Learning-Books-With-Python
+- Housing Data From Kaggle via Ted Petrou's Workshop: 
+https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+
 - Workshop inspired by: 
   - Ted Petrou, https://github.com/tdpetrou/Machine-Learning-Books-With-Python
   - Ali Sivji, Joe Jasinski, Tathagata Dasgupta
