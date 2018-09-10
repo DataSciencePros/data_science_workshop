@@ -78,4 +78,5 @@ https://github.com/tdpetrou/Machine-Learning-Books-With-Python
   - Ali Sivji, Joe Jasinski, Tathagata Dasgupta
   https://github.com/docker-for-data-science/docker-for-data-science-tutorial/tree/master/exercises
   https://www.youtube.com/watch?v=jbb1dbFaovg
-  
+  - Giuseppe Bonaccorso, Machine Learning Algorithms, Packt Publishing
+  https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-algorithms
