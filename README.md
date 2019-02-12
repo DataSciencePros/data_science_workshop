@@ -5,7 +5,7 @@ This is a broad review of how to
 - create predictive models using scikit-learn and evaluating them
 
 ## Prerequisites to install before coming to the Workshop
-### Recommended: Docker (or Python and All Dependencies and Jupyter Notebook)
+### Option A: Docker (Recommended) (or Python and All Dependencies and Jupyter Notebook)
 We will give you access to a Jupyter Notebook Server running in a virtual machine on the cloud. However, 
 we recommend you to have this notebook server running in a docker image locally on your own development machine, 
 so you will be able study this material later more easily.
@@ -42,9 +42,18 @@ if you use the commandline client:
 ```bash
 git clone https://github.com/DataSciencePros/data_science_workshop.git
 ```
+### Option B: Using your Computer as Jupyter Server (without Docker)
+```bash
+cd data_science_workshop
+pip install -r requirements.txt
+.\venv\Scripts\activate :: to activate virtual environment on Windows COmmandline
+jupyter notebook
+```
 
-## Running the Docker Image and Viewing the Jupyter Notebooks
-### If you are using Docker
+More on installing Jupiter:
+https://jupyter.org/install
+
+## Running the Docker Image and Viewing the Jupyter Notebooks (If you chose Option A: Docker)
 Copy this repo locally in your workspace, go to (data_science_workshop) repo folder:
 ```bash
  # this line for recommended way above to get this repo:
@@ -109,6 +118,10 @@ Paste the link to your browser.
 - In the notebook, clicking on one cell (code box), and shift-enter, executes code in that box.
 
 Visiting http://localhost:8888/?token=<token> in a browser loads JupyterLab, where hostname is the name of the computer running docker and token is the secret token printed in the console. Docker destroys the container after notebook server exit, but any files written to ~/work in the container remain intact on the host.
+
+## Running the Docker Image and Viewing the Jupyter Notebooks (without Docker)
+
+
 ## Running Code Snippets (cells) in the Notebook
 - Select cell, click Shift-Enter
 - or use "Cell" menu
