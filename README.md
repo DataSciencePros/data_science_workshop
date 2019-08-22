@@ -43,14 +43,38 @@ if you use the commandline client:
 git clone https://github.com/DataSciencePros/data_science_workshop.git
 ```
 ### Option B: Using your Computer as Jupyter Server (without Docker)
+Upgrade pip, python library installer app itself
+```bash
+python -m pip install --upgrade pi
+```
+
+Move into project folder
 ```bash
 cd data_science_workshop
+```
+
+Optional recommended best practice,use virtualenv, to create a clean sandbox and install all dependencies in it:
+```bash
+# install management tool for virtual environment directories
+pip install virtualenv
+# Create Virtual Environment in the local folder venv
+virtualenv venv
+# Activate Virtual Environment saved in folder venv
+# On Windows:
+venv\Scripts\activate
+# You will type "deactivate" if you need to exit virtual environment.
+```
+
+```bash
+# to activate virtual environment on Windows COmmandline
+.\venv\Scripts\activate 
+# install requirements in virtual environment
 pip install -r requirements.txt
-.\venv\Scripts\activate :: to activate virtual environment on Windows COmmandline
+# start jupyter notebook
 jupyter notebook
 ```
 
-More on installing Jupiter:
+More on installing Jupyter:
 https://jupyter.org/install
 
 ## Running the Docker Image and Viewing the Jupyter Notebooks (If you chose Option A: Docker)
