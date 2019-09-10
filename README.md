@@ -65,9 +65,9 @@ venv\Scripts\activate
 # You will type "deactivate" if you need to exit virtual environment.
 ```
 
-```bash
-# to activate virtual environment on Windows COmmandline
-.\venv\Scripts\activate 
+Since this is a whirlwind tour of Data Science and NLP, the requirements are too many.
+You should have only the packages you need in your requirements file...
+```bash 
 # install requirements in virtual environment
 pip install -r requirements.txt
 # start jupyter notebook
