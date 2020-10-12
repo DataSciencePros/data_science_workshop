@@ -147,9 +147,6 @@ Paste the link to your browser.
 
 Visiting http://localhost:8888/?token=<token> in a browser loads JupyterLab, where hostname is the name of the computer running docker and token is the secret token printed in the console. Docker destroys the container after notebook server exit, but any files written to ~/work in the container remain intact on the host.
 
-## Running the Docker Image and Viewing the Jupyter Notebooks (without Docker)
-
-
 ## Running Code Snippets (cells) in the Notebook
 - Select cell, click Shift-Enter
 - or use "Cell" menu
