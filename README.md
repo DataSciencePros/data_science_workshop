@@ -60,10 +60,14 @@ pip install virtualenv
 # Create Virtual Environment in the local folder venv
 virtualenv venv
 # Activate Virtual Environment saved in folder venv
-# On Windows:
+# On Windows cmd:
 venv\Scripts\activate
+# On Windows git bash, or on Unix-like OS:
+source venv/Scripts/activate
+# You will see (venv) added before your command promt
 # You will type "deactivate" if you need to exit virtual environment.
 ```
+
 
 Since this is a whirlwind tour of Data Science and NLP, the requirements are too many.
 You should have only the packages you need in your requirements file...
