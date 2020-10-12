@@ -45,7 +45,7 @@ git clone https://github.com/DataSciencePros/data_science_workshop.git
 ### Option B: Using your Computer as Jupyter Server (without Docker)
 Upgrade pip, python library installer app itself
 ```bash
-python -m pip install --upgrade pi
+python -m pip install --upgrade pip
 ```
 
 Move into project folder
