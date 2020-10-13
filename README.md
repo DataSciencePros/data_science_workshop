@@ -76,6 +76,8 @@ You should have only the packages you need in your requirements file...
 pip install -r requirements.txt
 # start jupyter notebook
 jupyter notebook
+# or, if you get memory error when you try to load the data, to increase memory to close to 4 Gb, set to  4 Billion bytes
+$ jupyter notebook --NotebookApp.max_buffer_size=4000000000
 ```
 
 More on installing Jupyter:
